@@ -536,7 +536,7 @@ header h2 {
     flex-direction: column;
 }
 
-.card-entrees, .card-plats, .card-deserts {
+.card  {
     padding: 15px 10px 15px 10px;
     width:89vw;
 }
@@ -604,11 +604,12 @@ header h2 {
     .img-pal {
         height:60vw;
     }
-    .card-entrees, .card-plats, .card-deserts {
+    .card {
         padding:15px 0px 15px 0px;
     }
     .prix {
         margin-top:20px;
+        margin-right:5px;
     }
     .full-menu {
         margin:auto;
