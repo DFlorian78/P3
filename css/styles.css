@@ -115,21 +115,29 @@ box-shadow: 20px 0px 0px 0Px rgb(74, 74, 74);
 }
 .discover {
     margin-top:-10px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 /*Bouton rechercher*/
 .button-search {
+    display:flex;
+    justify-content: center;
     padding:15px 15px 15px 15px;
     border-radius: 20px;
     color:white;
+    transform:scale(1);
+    transition-property: transform;
+    transition-duration:1000ms;
     background-image: linear-gradient(0deg, #9356DC, #FF79DA);
     font-weight: bold;
     cursor: pointer;
-}
+    margin:0 auto 0 auto;
+    width:10vw;
+} 
 .button-search:hover {
     background: linear-gradient(356deg, #a16be0 0%, #a16be0 33%, #ff93e1 88%, #ff93e1 100%);
     box-shadow: 1px 1px 1px 1px grey;
     transition: ease-in-out 0.5s;
+    transform:scale(1.15);
 }
 /* FONCTIONNEMENT DU SITE*/
 .step-tuto {
@@ -241,17 +249,68 @@ box-shadow: 20px 0px 0px 0Px rgb(74, 74, 74);
 .ville{
     color:black;
 }
+/*COEUR ACCUEIL*/
+.coeur-acc {
+    display:flex;
+    margin-top:-10px;
+}
+
+.fa-heart {
+    font-size: 30px;
+    color:black;
+    margin-right: 20px;
+    margin-top:30px;
+    
+ }
+ .fa-heart:hover::before {
+     content:"\f004";
+     display:none;
+     margin-left:-30px;
+ }
+ .fa-heart:hover::after {
+     opacity:1;
+ }
+ .fa-heart::after {
+     content:"\f004";
+     position:absolute;
+     z-index:2;
+     background-image:linear-gradient(0deg, #9356DC, #FF79DA);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     opacity: 0;
+     margin-left:-30px;
+     font-weight: 900;
+ }
+/*COEUR RESTAURANT*/
+.coeur {
+    display:flex;
+    margin-top:-10px;
+}
 .fa-heart {
    font-size: 30px;
    color:black;
    margin-right: 20px;
    margin-top:30px;
+   
 }
-.fa-heart:hover {
+.fa-heart:hover::before {
+    content:"\f004";
     display:none;
+    margin-left:-30px;
 }
-.fa-heart-full {
-    background-image: linear-gradient(0deg, #9356DC, #FF79DA); 
+.fa-heart:hover::after {
+    opacity:1;
+}
+.fa-heart::after {
+    content:"\f004";
+    position:absolute;
+    z-index:2;
+    background-image:linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    margin-left:-30px;
+    font-weight: 900;
 }
 /*FOOTER*/
 .footer {
@@ -289,7 +348,7 @@ footer .container {
 }
 .menu-header h2 {
     font-family: 'Shrikhand', cursive;
-    font-size: 30px;
+    font-size: 25px;
 }
 .fa-arrow-left-long {
     position:absolute;
@@ -452,16 +511,20 @@ header h2 {
     padding:15px 15px 15px 15px;
     border-radius: 20px;
     color:white;
+    transform:scale(1);
+    transition-property: transform;
+    transition-duration:1000ms;
     background-image: linear-gradient(0deg, #9356DC, #FF79DA);
     font-weight: bold;
     cursor: pointer;
     margin:0 auto 0 auto;
     width:10vw;
-}
+} 
 .button-order:hover {
     background: linear-gradient(356deg, #a16be0 0%, #a16be0 33%, #ff93e1 88%, #ff93e1 100%);
     box-shadow: 1px 1px 1px 1px grey;
     transition: ease-in-out 0.5s;
+    transform:scale(1.15);
 }
 
 /* MEDIA TABLETTE*/
@@ -546,8 +609,13 @@ header h2 {
 .footer {
     padding-left:20px;
 }
-
-
+.coeur-acc {
+    display:flex;
+    margin-top:0px;
+}
+.button-order {
+    width:20vw;
+}
 }
 
 /* MEDIA MOBILE*/
@@ -623,6 +691,10 @@ header h2 {
     .button-order {
         width:40vw;
         margin-bottom: 40px;
+    }
+    .coeur-acc {
+        display:flex;
+        margin-top:0px;
     }
 } 
 
