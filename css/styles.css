@@ -131,7 +131,7 @@ box-shadow: 20px 0px 0px 0Px rgb(74, 74, 74);
     font-weight: bold;
     cursor: pointer;
     margin:0 auto 0 auto;
-    width:10vw;
+    width:20%;
 } 
 .button-search:hover {
     background: linear-gradient(356deg, #a16be0 0%, #a16be0 33%, #ff93e1 88%, #ff93e1 100%);
@@ -545,7 +545,9 @@ header h2 {
     margin-top:25px;
     font-size: 25px;
 }
-
+.button-search {
+    width:30vw;
+}
 /* TUTO*/
 .img-pal {
     height: 35vw;
@@ -614,7 +616,7 @@ header h2 {
     margin-top:0px;
 }
 .button-order {
-    width:20vw;
+    width:20%;
 }
 }
 
@@ -649,6 +651,9 @@ header h2 {
         flex-direction: column;
         padding:20px;
         row-gap:30px;
+    }
+    .button-search {
+        width:50%;
     }
     .step {
         padding : 10px 10px 10px 10px;
