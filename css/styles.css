@@ -99,9 +99,14 @@ padding:20px 0px 20px 0px;
 font-size: 18px;
 font-weight: 1000;
 box-shadow: 20px 0px 0px 0Px rgb(74, 74, 74);
+font-weight: bold;
 }
 .loca-texte {
-    margin-left:10px;
+    border: none;
+    outline:none;
+    background-color: inherit;
+    font-weight: bold;
+    text-align: center;
 }
 /* DETAIL SITE */
 .search-menu {
@@ -195,21 +200,6 @@ box-shadow: 20px 0px 0px 0Px rgb(74, 74, 74);
 }
 
 /*LOGO NOUVEAUTES*/
-.new-logo {
-    position:absolute; 
-    background-color: #99e2d0;
-    color:#39a98e;
-    font-size: 17px;
-    font-weight: 510;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    right:37px;
-    padding:10px;
-    margin-top:20px;
-}
-
 .texte-restau {
     padding-top:30px;
 }
@@ -230,6 +220,18 @@ box-shadow: 20px 0px 0px 0Px rgb(74, 74, 74);
     flex-direction: column;
     row-gap:30px;
 }
+.new-logo {
+    position:absolute; 
+    background-color: #99e2d0;
+    color:#39a98e;
+    font-size: 14px;
+    font-weight: 510;
+    border-radius: 5px;
+    margin-left:-5rem;
+    margin-top:10px;
+    padding:10px;
+}
+
 .card-body{
     margin-left:15px;
     display:flex;
@@ -576,9 +578,6 @@ header h2 {
     margin-top:25px;
     font-size: 25px;
 }
-.button-search {
-    width:30vw;
-}
 /* TUTO*/
 .img-pal {
     height: 35vw;
@@ -602,36 +601,28 @@ header h2 {
     height:22vw;
 }
 /*RESTAURANTS*/
-.new-logo {
-    position:absolute; 
-    background-color: #99e2d0;
-    color:#39a98e;
-    font-size: 17px;
-    font-weight: 510;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    right:55px;
-    padding:10px;
-    margin-top:20px;
-}
+
 .texte-restau {
     padding-left:25px;
 }
 .cards-restau {
-    display:flex;
-    flex-direction: column;
+    display:grid;
+    grid-template-rows: repeat (2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: initial;
     row-gap:30px;
     margin-top:-20px;
     padding:25px;
+    column-gap: 20px;
 }
 
 .full-menu {
     display:flex;
     flex-direction: column;
 }
-
+.cards {
+    width:100%;
+}
 .card  {
     padding: 15px 10px 15px 10px;
     width:89vw;
@@ -649,6 +640,8 @@ header h2 {
 .button-order {
     width:20%;
 }
+
+
 }
 
 /* MEDIA MOBILE*/
@@ -686,7 +679,10 @@ header h2 {
     .step {
         padding : 10px 10px 10px 10px;
         flex-wrap:wrap;
-        width:30%;
+        width:27%;
+    }
+    .img-heber {
+        height:14vw;
     }
     .new-logo {
         position:absolute; 
@@ -694,15 +690,9 @@ header h2 {
         color:#39a98e;
         font-size: 14px;
         font-weight: 510;
-        display:flex;
-        align-items: center;
-        justify-content: center;
         border-radius: 5px;
-        right:51px;
-        margin-top:10px;
-    }
-    .img-heber {
-        height:14vw;
+        margin-left:-5rem;
+        padding:10px;
     }
     .img-pal {
         height:25vw;
